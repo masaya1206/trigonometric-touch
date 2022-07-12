@@ -61,12 +61,12 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = html02;
     const touchArea = document.getElementById('#output01');
-    document.getElementById('#info').style.visibility = "hidden";
+//    document.getElementById('#info').style.visibility = "hidden";
     // ボタンをクリックしたときの処理を追加
     elCalc.addEventListener('click', function() {
 	obj = triangles[Math.floor( Math.random() * triangles.length)];
 	html01 = '<img src=' + obj.pic + '>';
-	html02 = '<img src=' + obj.ans + '>';
+	html02 = '<img src=' + obj.ans + ' id="info" >';
 	document.querySelector('#output01').innerHTML = html01;
 	document.querySelector('#output02').innerHTML = html02;
     });
