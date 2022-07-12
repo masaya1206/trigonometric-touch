@@ -72,18 +72,18 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     //touchstartイベント
-    document.addEventListner('touchstart', function() {
+    document.addEventListener('touchstart', function() {
         document.getElementById('#info').style.visibility = 'visible';
     });
 
     //touchmoveイベント
-    document.addEventListner('touchmove', function() {
+    document.addEventListener('touchmove', function() {
         eventpreventDefault();
         document.getElementById('#info').style.visibility = 'visible';
     });
 
     //touchstartイベント
-    document.addEventListner('touchcancel', function() {
+    document.addEventListener('touchcancel', function() {
 	document.getElementById('#info').style.visibility = 'hidden';
     });
 
