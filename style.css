@@ -41,3 +41,5 @@ img {
     height: auto;
     opacity: 1;
 }
+
+#info {visibility:hidden;}

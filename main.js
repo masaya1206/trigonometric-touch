@@ -66,25 +66,25 @@ window.addEventListener('DOMContentLoaded', function() {
     elCalc.addEventListener('click', function() {
 	obj = triangles[Math.floor( Math.random() * triangles.length)];
 	html01 = '<img src=' + obj.pic + '>';
-	html02 = '<img src=' + obj.ans + ' id="info" >';
+	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
 	document.querySelector('#output02').innerHTML = html02;
     });
 
     //touchstartイベント
-    touchArea.addEventListner("touchstart", () => {
-        document.getElementById('#info').style.visibility = "visible";
+    touchArea.addEventListner('touchstart', function() {
+        document.getElementById('#info').style.visibility = 'visible';
     });
 
     //touchmoveイベント
-    touchArea.addEventListner("touchmove", () => {
+    touchArea.addEventListner('touchmove', function() {
         eventpreventDefault();
-        document.getElementById('#info').style.visibility = "visible";
+        document.getElementById('#info').style.visibility = 'visible';
     });
 
     //touchstartイベント
-    touchArea.addEventListner("touchcancel", () => {
-	document.getElementById('#info').style.visibility = "hidden";
+    touchArea.addEventListner('touchcancel', function() {
+	document.getElementById('#info').style.visibility = 'hidden';
     });
 
 
