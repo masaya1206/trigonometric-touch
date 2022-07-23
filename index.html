@@ -4,11 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
     <p style="text-align:right"> &copy; 2022 Tokyo High School Mathematics Study Group(ICT Subcommittee).</p>
     <h1>三角比クイズ</h1>
     <div class="title">三角比を答えよ</div>
+
+    <div id="hitarea">TOUCH ME</div>
+    <div id="eventname">-</div>
+    <div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
+
+    <script src="script.js"></script>
+      
+<!--
+
    <button id="calc">次の問題</button>
       <label for="label1">
 	<div style="float:left;"> 
@@ -21,9 +31,9 @@
 	<p> HERE </P>
       </div>
 
- 
-
-<!--
+      <div id="hitarea">TOUCH ME</div>
+      <div id="eventname">-</div>
+      <div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
       <div id="info">
       <div class="hidden_show">
 	<div id="output02"></div>
