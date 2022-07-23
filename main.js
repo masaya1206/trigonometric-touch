@@ -55,12 +55,6 @@ const triangles = [
 window.addEventListener('DOMContentLoaded', function() {
 
 
-
-
-
-}); // End window.addEventListener
-
-
 // 要素ら
 
 var el_hitarea = document.getElementById('hitarea');
@@ -97,3 +91,9 @@ el_hitarea.addEventListener('touchend', function(event) {
   updateXY(event);
   el_hitarea.style.backgroundColor = 'blue';
 }, false);
+
+
+
+}); // End window.addEventListener
+
+
