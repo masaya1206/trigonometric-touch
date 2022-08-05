@@ -58,22 +58,24 @@ window.addEventListener('DOMContentLoaded', function() {
     let selectMode = document.querySelector('#select');
     let radioNodeList = selectMode.select0;
     var checkValue = radioNodeList.value;
-
+    const touchArea = document.getElementById("touch-area");
+    
     let html01 = '<img src=' + obj.pic + '>';
     let html02 = '';
 //    let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = html02;
 
-    const touchArea = document.getElementById("touch-area");
 
-    /*
-    //touchArea1のイベント
+
+ 
+    //touchAreaのイベント
     touchArea.addEventListener('touchstart', function() {
 //	html02 = '<img src=' + obj.ans + '>';
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
+    /*
     touchArea1.addEventListener('touchmove', function() {
 	html02 = '<img src=' + obj.ans + '>';
 //	html02 = '<H2="HERE"></H2>';
@@ -89,12 +91,12 @@ window.addEventListener('DOMContentLoaded', function() {
     nextQ.addEventListener('click', function() {
 	obj = trigonometric_data[Math.floor( Math.random() * trigonometric_data.length)];
 	checkValue = radioNodeList.value;
-//	if (checkValue === "1")
-//	{
+	if (checkValue === "1")
+	{
 	    html01 = '<img src=' + obj.pic + '>';
-//	} else if (checkValue === "2") {
-//	    html01 = '<img src=' + obj.pic1 + '>';
-//	}
+	} else if (checkValue === "2") {
+	    html01 = '<img src=' + obj.pic1 + '>';
+	}
 //	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
 //	document.querySelector('#output02').innerHTML = html02;
