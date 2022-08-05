@@ -69,12 +69,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // ボタンをクリックしたときの処理を追加
     touchArea.addEventListener('touchstart', function() {
-	event.stopPropagation();
 //	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchmove', function() {
-	event.stopPropagation();
 	event.preventDefault();
 //	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
