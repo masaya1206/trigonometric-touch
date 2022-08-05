@@ -74,8 +74,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea1.addEventListener('touchmove', function() {
-//	html02 = '<img src=' + obj.ans + '>';
-	html02 = '<H2="HERE"></H2>';
+	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea1.addEventListener('touchend', function() {
