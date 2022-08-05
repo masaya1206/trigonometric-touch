@@ -61,12 +61,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const touchArea = document.getElementById("touch-area");
     
     let html01 = '<img src=' + obj.pic + '>';
-    let html02 = '';
+//    let html02 = '';
 //    let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = html02;
-
-
 
  /*
     //touchAreaのイベント
@@ -89,7 +87,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 */
 
-        // ボタンをクリックしたときの処理を追加
+    // ボタンをクリックしたときの処理を追加
     nextQ.addEventListener('click', function() {
 	obj = trigonometric_data[Math.floor( Math.random() * trigonometric_data.length)];
 	checkValue = radioNodeList.value;
