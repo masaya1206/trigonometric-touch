@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let selectMode = document.querySelector('#select');
     let radioNodeList = selectMode.select0;
     var checkValue = radioNodeList.value;
-    const touchArea = document.getElementById("touch-area");
+    const touchArea = document.getElementById('touch-area');
     
     let html01 = '<img src=' + obj.pic + '>';
     //    let html02 = '';
