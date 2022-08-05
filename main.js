@@ -53,6 +53,7 @@ const trigonometric_data = [
 ];
 
 window.addEventListener('DOMContentLoaded', function() {
+    
     let nextQ = document.querySelector('#nextQuestion');
     let obj = trigonometric_data[Math.floor( Math.random() * trigonometric_data.length)];
     let selectMode = document.querySelector('#select');
@@ -69,13 +70,13 @@ window.addEventListener('DOMContentLoaded', function() {
     // ボタンをクリックしたときの処理を追加
     touchArea.addEventListener('touchstart', function() {
 	event.stopPropagation();
-	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchmove', function() {
 	event.stopPropagation();
 	event.preventDefault();
-	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchend', function() {
