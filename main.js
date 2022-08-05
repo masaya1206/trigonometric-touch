@@ -63,15 +63,22 @@ window.addEventListener('DOMContentLoaded', function() {
     let html02 = '';
 //    let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
-//    document.querySelector('#output02').innerHTML = html02;
+    document.querySelector('#output02').innerHTML = html02;
 
     const touchArea1 = document.getElementById("touch-area1");
 
     //touchArea1のイベント
     touchArea1.addEventListener('touchstart', function() {
-	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<img src=' + obj.ans + '>';
+	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
+    touchArea1.addEventListener('touchmove', function() {
+//	html02 = '<img src=' + obj.ans + '>';
+	html02 = '<H2="HERE"></H2>';
+	document.querySelector('#output02').innerHTML = html02;
+    });
+
     touchArea1.addEventListener('touchend', function() {
 	html02 = '';
 	document.querySelector('#output02').innerHTML = html02;
