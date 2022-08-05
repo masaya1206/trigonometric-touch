@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
-	document.querySelector('#output02').innerHTML = html02;
+//	document.querySelector('#output02').innerHTML = html02;
     });
 
 
