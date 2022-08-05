@@ -9,22 +9,33 @@ img {
   width: 200px;
 }
 
+.question_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
 
 
-#info {visibility:hidden;}
+/*ボタン装飾*/
+.hidden_box label {
+    cursor :pointer;
+}
 
-html,body {
-	margin:0;
-	padding:0;
-	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
 }
-#hitarea {
-	margin:10px 10px 8px;
-	background:blue;
-	color:#fff;
-	line-height:200px;
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+/*    transition: 0.8s; */
 }
-#eventname {
-	margin: 0 0 8px;
-}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;

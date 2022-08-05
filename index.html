@@ -4,42 +4,29 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <meta name="viewport" content="width=device-width">
   </head>
   <body>
     <p style="text-align:right"> &copy; 2022 Tokyo High School Mathematics Study Group(ICT Subcommittee).</p>
-    <h1>三角比クイズ</h1>
-    <div class="title">三角比を答えよ</div>
+    <p style="text-align:right"> &copy; 2022 東京都高等学校数学教育研究会(ICT分科会)</p>
 
-    <div id="hitarea">TOUCH ME</div>
-    <div id="eventname">-</div>
-    <div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
 
-    <script src="script.js"></script>
-      
-<!--
-
-   <button id="calc">次の問題</button>
-      <label for="label1">
-	<div style="float:left;"> 
+    <h1>三角関数(三角比)クイズ</h1>
+    <form id="select">
+      <label><input type="radio" name="select0" id="input01" value="1" onchange="" checked>数学I(度数法)</label>
+      <label><input type="radio" name="select0" id="input02" value="2" onchange="">数学II(弧度法)</label>
+    </form>
+    <br>
+    <br>
+    三角関数(三角比)を答えよ
+    <br>
+    <button id="nextQuestion">次の問題</button>
+    <div class="question_box">
+      <div style="float:left;">
+	<div id="touch-area1">
 	  <div id="output01"></div>
-	  </div>
-      </label>
-
-      <div id="info">
-	<div id="output02"></div>
-	<p> HERE </P>
+	<div>
       </div>
-
-      <div id="hitarea">TOUCH ME</div>
-      <div id="eventname">-</div>
-      <div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
-      <div id="info">
-      <div class="hidden_show">
-	<div id="output02"></div>
-      </div>
-      </div>
--->
+    </div>
     <br>
 
   </body>
