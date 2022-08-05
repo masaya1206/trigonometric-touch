@@ -74,6 +74,12 @@ window.addEventListener('DOMContentLoaded', function() {
 //	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
+    touchArea.addEventListener('touchmove', function() {
+	event.preventDefault();  // 画面スクロールを防止
+//	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<H2="HERE"></H2>';
+	document.querySelector('#output02').innerHTML = html02;
+    });
 
     touchArea.addEventListener('touchend', function() {
 //	html02 = '<img src=' + obj.ans + '>';
