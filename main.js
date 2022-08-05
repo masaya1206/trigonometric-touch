@@ -70,13 +70,14 @@ window.addEventListener('DOMContentLoaded', function() {
 
  
     //touchAreaのイベント
-    touchArea.addEventListener('touchstart', function() {
+    touchArea.addEventListener('touchstart', () => {
 //	html02 = '<img src=' + obj.ans + '>';
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     /*
     touchArea1.addEventListener('touchmove', function() {
+        event.preventDefault();  // 画面スクロールを防止
 	html02 = '<img src=' + obj.ans + '>';
 //	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
