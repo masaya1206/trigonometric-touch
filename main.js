@@ -61,10 +61,11 @@ window.addEventListener('DOMContentLoaded', function() {
     const touchArea = document.getElementById("touch-area");
     
     let html01 = '<img src=' + obj.pic + '>';
-//    let html02 = '';
+    //    let html02 = '';
+    let html02 = '<img src=' + obj.ans + '>';
 //    let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
-//    document.querySelector('#output02').innerHTML = html02;
+    document.querySelector('#output02').innerHTML = html02;
 
 
     //touchAreaのイベント
