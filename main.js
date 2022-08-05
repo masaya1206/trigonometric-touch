@@ -55,6 +55,7 @@ const trigonometric_data = [
 window.addEventListener('DOMContentLoaded', function() {
     
     let nextQ = document.querySelector('#nextQuestion');
+
     let obj = trigonometric_data[Math.floor( Math.random() * trigonometric_data.length)];
     let selectMode = document.querySelector('#select');
     let radioNodeList = selectMode.select0;
@@ -62,29 +63,22 @@ window.addEventListener('DOMContentLoaded', function() {
     const touchArea = document.getElementById('touch-area');
     
     let html01 = '<img src=' + obj.pic + '>';
-    //    let html02 = '';
     let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = '';
 
-    // ボタンをクリックしたときの処理を追加
+    // タッチ操作をしたときの処理を追加
     touchArea.addEventListener('touchstart', function() {
-//	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchmove', function() {
-	event.preventDefault();
-//	html02 = '<img src=' + obj.ans + '>';
+	event.preventDefault();  // スクロール操作禁止
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchend', function() {
-//	html02 = '';
-//	document.querySelector('#output02').innerHTML = html02;
-		document.querySelector('#output02').innerHTML = '';
+	document.querySelector('#output02').innerHTML = '';
     });
     touchArea.addEventListener('touchcancel', function() {
-//	html02 = '';
-//	document.querySelector('#output02').innerHTML = html02;
 	document.querySelector('#output02').innerHTML = '';
     });
 
@@ -100,9 +94,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
-//	document.querySelector('#output02').innerHTML = html02;
     });
-
 
     // ラジオボタンを変更したときの処理を追加
     selectMode.addEventListener('change', function() {
@@ -114,9 +106,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	    html01 = '<img src=' + obj.pic1 + '>';
 	}
 	document.querySelector('#output01').innerHTML = html01;
-//	document.querySelector('#output02').innerHTML = html02;
     });
-
     
 }); // End window.addEventListener
 
