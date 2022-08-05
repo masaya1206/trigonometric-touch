@@ -67,8 +67,12 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#output02').innerHTML = '';
 
     // ボタンをクリックしたときの処理を追加
-    touchArea.addEventListener('touch', function() {
+    touchArea.addEventListener('touchstart', function() {
 	html02 = '<img src=' + obj.ans + '>';
+	document.querySelector('#output02').innerHTML = html02;
+    });
+    touchArea.addEventListener('touchend', function() {
+	html02 = '';
 	document.querySelector('#output02').innerHTML = html02;
     });
 
