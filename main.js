@@ -65,10 +65,10 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = html02;
 
-    const touchArea1 = document.getElementById("touch-area1");
+    const touchArea = document.getElementById("touch-area");
 
     //touchArea1のイベント
-    touchArea1.addEventListener('touchstart', function() {
+    touchArea.addEventListener('touchstart', function() {
 //	html02 = '<img src=' + obj.ans + '>';
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
@@ -78,7 +78,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
-
     touchArea1.addEventListener('touchend', function() {
 	html02 = '';
 	document.querySelector('#output02').innerHTML = html02;
