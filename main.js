@@ -72,6 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchmove', function() {
+	event.preventDefault();
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
