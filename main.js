@@ -75,12 +75,12 @@ window.addEventListener('DOMContentLoaded', function() {
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
-    /*
+
     touchArea1.addEventListener('touchmove', function() {
         event.preventDefault();  // 画面スクロールを防止
-	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<img src=' + obj.ans + '>';
 //	html02 = '<H2="HERE"></H2>';
-	document.querySelector('#output02').innerHTML = html02;
+//	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea1.addEventListener('touchend', function() {
 	html02 = '';
