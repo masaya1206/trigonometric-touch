@@ -70,8 +70,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //touchAreaのイベント
     touchArea.addEventListener('touchstart', function() {
-//	html02 = '<img src=' + obj.ans + '>';
-	html02 = '<H2="HERE0"></H2>';
+	html02 = '<img src=' + obj.ans + '>';
+//	html02 = '<H2="HERE0"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
 /*
