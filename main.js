@@ -70,8 +70,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //touchAreaのイベント
     touchArea.addEventListener('touchstart', function() {
-	html02 = '<img src=' + obj.ans + '>';
-//	html02 = '<H2="HERE"></H2>';
+//	html02 = '<img src=' + obj.ans + '>';
+	html02 = '<H2="HERE0"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
 /*
@@ -81,13 +81,13 @@ window.addEventListener('DOMContentLoaded', function() {
 	html02 = '<H2="HERE"></H2>';
 //	document.querySelector('#output02').innerHTML = html02;
     });
-
+*/
     touchArea1.addEventListener('touchend', function() {
 //	html02 = '';
-	html02 = '<H2="HERE"></H2>';
+	html02 = '<H2="HERE1"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
-*/
+
 
     // ボタンをクリックしたときの処理を追加
     nextQ.addEventListener('click', function() {
