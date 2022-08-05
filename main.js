@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let selectMode = document.querySelector('#select');
     let radioNodeList = selectMode.select0;
     var checkValue = radioNodeList.value;
-    const touchArea = document.getElementById("touch-area");
+    const touchArea = document.getElementById('touch-area');
     
     let html01 = '<img src=' + obj.pic + '>';
     //    let html02 = '';
@@ -67,14 +67,14 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = html02;
 
-/*
+
     //touchAreaのイベント
     touchArea.addEventListener('touchstart', function() {
 //	html02 = '<img src=' + obj.ans + '>';
 	html02 = '<H2="HERE"></H2>';
 	document.querySelector('#output02').innerHTML = html02;
     });
-
+/*
     touchArea1.addEventListener('touchmove', function() {
         event.preventDefault();  // 画面スクロールを防止
 //	html02 = '<img src=' + obj.ans + '>';
