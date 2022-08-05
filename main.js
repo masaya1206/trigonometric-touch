@@ -71,7 +71,15 @@ window.addEventListener('DOMContentLoaded', function() {
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
+    touchArea.addEventListener('touchmove', function() {
+	html02 = '<img src=' + obj.ans + '>';
+	document.querySelector('#output02').innerHTML = html02;
+    });
     touchArea.addEventListener('touchend', function() {
+	html02 = '';
+	document.querySelector('#output02').innerHTML = html02;
+    });
+    touchArea.addEventListener('touchcancel', function() {
 	html02 = '';
 	document.querySelector('#output02').innerHTML = html02;
     });
