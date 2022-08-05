@@ -72,6 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
     touchArea.addEventListener('touchstart', function() {
 //	html02 = '<img src=' + obj.ans + '>';
 	html02 = '<H2="HERE"></H2>';
+	console.log("タッチ");
 	document.querySelector('#output02').innerHTML = html02;
     });
 
