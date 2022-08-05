@@ -63,43 +63,14 @@ window.addEventListener('DOMContentLoaded', function() {
     let html01 = '<img src=' + obj.pic + '>';
     //    let html02 = '';
     let html02 = '<img src=' + obj.ans + '>';
-    let html02 = '<img src=' + obj.ans + '>';
     document.querySelector('#output01').innerHTML = html01;
-//    document.querySelector('#output02').innerHTML = html02;
+    document.querySelector('#output02').innerHTML = '';
 
-
-    //touchAreaのイベント
-    touchArea.addEventListener('touchstart', function() {
-//	html02 = '<img src=' + obj.ans + '>';
-//	html02 = '<H2="HERE"></H2>';
+    // ボタンをクリックしたときの処理を追加
+    touchArea.addEventListener('touch', function() {
+	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output02').innerHTML = html02;
     });
-    touchArea.addEventListener('touchmove', function() {
-	event.preventDefault();  // 画面スクロールを防止
-//	html02 = '<img src=' + obj.ans + '>';
-//	html02 = '<H2="HERE"></H2>';
-	document.querySelector('#output02').innerHTML = html02;
-    });
-
-    touchArea.addEventListener('touchend', function() {
-//	html02 = '<img src=' + obj.ans + '>';
-//	html02 = '<H2="HERE"></H2>';
-	document.querySelector('#output02').innerHTML = '';
-    });
-/*
-    touchArea1.addEventListener('touchmove', function() {
-        event.preventDefault();  // 画面スクロールを防止
-//	html02 = '<img src=' + obj.ans + '>';
-	html02 = '<H2="HERE"></H2>';
-//	document.querySelector('#output02').innerHTML = html02;
-    });
-
-    touchArea1.addEventListener('touchend', function() {
-//	html02 = '';
-	html02 = '<H2="HERE"></H2>';
-	document.querySelector('#output02').innerHTML = html02;
-    });
-*/
 
     // ボタンをクリックしたときの処理を追加
     nextQ.addEventListener('click', function() {
@@ -113,7 +84,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
-//	document.querySelector('#output02').innerHTML = html02;
+	document.querySelector('#output02').innerHTML = html02;
     });
 
 
