@@ -80,12 +80,14 @@ window.addEventListener('DOMContentLoaded', function() {
 	document.querySelector('#output02').innerHTML = html02;
     });
     touchArea.addEventListener('touchend', function() {
-	html02 = '';
-	document.querySelector('#output02').innerHTML = html02;
+//	html02 = '';
+//	document.querySelector('#output02').innerHTML = html02;
+		document.querySelector('#output02').innerHTML = '';
     });
     touchArea.addEventListener('touchcancel', function() {
-	html02 = '';
-	document.querySelector('#output02').innerHTML = html02;
+//	html02 = '';
+//	document.querySelector('#output02').innerHTML = html02;
+	document.querySelector('#output02').innerHTML = '';
     });
 
     // ボタンをクリックしたときの処理を追加
