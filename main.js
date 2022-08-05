@@ -67,6 +67,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     const touchArea = document.getElementById("touch-area");
 
+    /*
     //touchArea1のイベント
     touchArea.addEventListener('touchstart', function() {
 //	html02 = '<img src=' + obj.ans + '>';
@@ -82,7 +83,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	html02 = '';
 	document.querySelector('#output02').innerHTML = html02;
     });
-
+*/
 
         // ボタンをクリックしたときの処理を追加
     nextQ.addEventListener('click', function() {
