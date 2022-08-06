@@ -8,3 +8,8 @@ img {
     width: 200px;
     pointer-events: none;
 }
+
+body {
+  -webkit-touch-callout:none; // リンク長押しのポップアップを無効化
+  -webkit-user-select:none; // テキスト長押しの選択ボックスを無効化
+}
