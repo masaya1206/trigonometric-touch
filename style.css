@@ -5,8 +5,35 @@ h1 { margin: 0; }
 .title { display: inline-block; width: 4rem; }
 .item input { width: 8rem; box-sizing: border-box; }
 
+button {
+	display: block;
+	width: 150px;
+//	padding: 1em;
+	margin: autoactive;
+	color: #fff;
+	font-size: 16pt;
+	text-align: center;
+	text-decoration: none;
+	background: linear-gradient(90deg, #407097, #88dfa2);
+	background-size: 300%;
+	border-radius: 10px;
+	animation: backgradation 3s	infinite;
+}
+
+
+@keyframes backgradation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 img {
-//    width: 720px;
 	width: 100%;
     pointer-events: none;
 }
