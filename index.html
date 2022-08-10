@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
   </head>
-  <body oncontextmenu='return false;' oncopy='return false;'>
-    <h1>三角関数(三角比)クイズ</h1>
-    <form id="select">
-      <label><input type="radio" name="select0" id="input01" value="1" onchange="" checked>数学I(度数法)</label>
+  <body bgcolor="#272773" text="#66bdff" vlink="#FC4BF2" oncontextmenu='return false;' oncopy='return false;'>
+    <img src="logo/title.png" width="500" height="250" alt=""/>
+<form id="select">
+  <label><input type="radio" name="select0" id="input01" value="1" onchange="" checked>数学I(度数法)</label>
       <label><input type="radio" name="select0" id="input02" value="2" onchange="">数学II(弧度法)</label>
-    </form>
-    三角関数(三角比)を答えよ
+  </form>
+	  <font color="#ffffff">三角関数(三角比)を答えよ</font>
     <br>
     <div style="float:left;">
       <table><tr>
-	  <td> <button id="nextQuestion">次の問題</button></td><td></td>
+	  <td> <button id="nextQuestion">次の問題</button></td>
+	</tr>
+	<tr height="210">
+	 <td>
+	    <div id="output02"></div>
+	  </td> 
 	</tr>
 	<tr>
-	  <td style="border-style:solid; border-width:1px; border-color:blue">
+	  <td style="border-style:solid; border-width:1px; border-color:green">
 	    <div id="touch-area">
 	      <div id="output01"></div>
 	    </div>
 	  </td>
-	  <td>
-	    <div id="output02"></div>
-	  </td>
-      </tr></table>
+     </tr>
+	 <tr><td>
+			<a href="https://masaya1206.github.io/trigonometric/">PCはこちらへ</a>
+	 </td></tr>
+	</table>
     </div>
     <br>
     <br>
@@ -38,7 +44,7 @@
     <br>
     <br>
     <p>
-      <a href="https://masaya1206.github.io/trigonometric/">PCはこちらへ</a>
+
     </p>
     <p style="text-align:right"> &copy; 2022 Tokyo High School Mathematics Study Group(ICT Subcommittee).</p>
     <p style="text-align:right"> &copy; 2022 東京都高等学校数学教育研究会(ICT分科会)</p>
