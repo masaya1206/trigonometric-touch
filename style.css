@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 { margin: 0; }
 .item { letter-spacing: -1em; }
 .item * { letter-spacing: 0; display: inline-block; }
@@ -5,7 +6,7 @@ h1 { margin: 0; }
 .item input { width: 8rem; box-sizing: border-box; }
 
 img {
-    width: 200px;
+    width: 400px;
     pointer-events: none;
 }
 
