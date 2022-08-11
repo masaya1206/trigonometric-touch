@@ -62,8 +62,8 @@ window.addEventListener('DOMContentLoaded', function() {
     var checkValue = radioNodeList.value;
     const touchArea = document.getElementById('touch-area');
     
-    let html01 = '<img src=' + obj.pic + ' width="150">';
-    let html02 = '<img src=' + obj.ans + ' width="150">';
+    let html01 = '<img src=' + obj.pic + ' width = "100%">';
+    let html02 = '<img src=' + obj.ans + ' width = "100%">';
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = '';
 
@@ -88,11 +88,11 @@ window.addEventListener('DOMContentLoaded', function() {
 	checkValue = radioNodeList.value;
 	if (checkValue === "1")
 	{
-	    html01 = '<img src=' + obj.pic + ' width="150">';
+	    html01 = '<img src=' + obj.pic + ' width="100%">';
 	} else if (checkValue === "2") {
-	    html01 = '<img src=' + obj.pic1 + ' width="150">';
+	    html01 = '<img src=' + obj.pic1 + ' width="100%">';
 	}
-	html02 = '<img src=' + obj.ans + ' width="40%">';
+	html02 = '<img src=' + obj.ans + ' width="100%">';
 	document.querySelector('#output01').innerHTML = html01;
     });
 
@@ -100,10 +100,10 @@ window.addEventListener('DOMContentLoaded', function() {
     selectMode.addEventListener('change', function() {
 	checkValue = radioNodeList.value;
 	if(checkValue === "1") {
-	    html01 = '<img src=' + obj.pic + '>';
+	    html01 = '<img src=' + obj.pic + ' width="100%">';
 	}
 	else if (checkValue === "2"){
-	    html01 = '<img src=' + obj.pic1 + '>';
+	    html01 = '<img src=' + obj.pic1 + ' width="100%">';
 	}
 	document.querySelector('#output01').innerHTML = html01;
     });
