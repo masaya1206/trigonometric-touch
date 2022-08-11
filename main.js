@@ -62,8 +62,8 @@ window.addEventListener('DOMContentLoaded', function() {
     var checkValue = radioNodeList.value;
     const touchArea = document.getElementById('touch-area');
     
-    let html01 = '<img src=' + obj.pic + ' width = "150">';
-    let html02 = '<img src=' + obj.ans + ' width = "150">';
+    let html01 = '<img src=' + obj.pic + ' width="150">';
+    let html02 = '<img src=' + obj.ans + ' width="150">';
     document.querySelector('#output01').innerHTML = html01;
     document.querySelector('#output02').innerHTML = '';
 
