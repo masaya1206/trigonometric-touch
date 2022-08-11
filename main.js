@@ -88,9 +88,9 @@ window.addEventListener('DOMContentLoaded', function() {
 	checkValue = radioNodeList.value;
 	if (checkValue === "1")
 	{
-	    html01 = '<img src=' + obj.pic + ' width="40%">';
+	    html01 = '<img src=' + obj.pic + ' width="150">';
 	} else if (checkValue === "2") {
-	    html01 = '<img src=' + obj.pic1 + ' width="40%">';
+	    html01 = '<img src=' + obj.pic1 + ' width="150">';
 	}
 	html02 = '<img src=' + obj.ans + ' width="40%">';
 	document.querySelector('#output01').innerHTML = html01;
